@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+  }
+  
+  h1, h2, h3 {
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    color: #0056b3;
+  }
+  
+  /* Layout Styling */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .header {
+    background: #007bff;
+    color: #ffffff;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 1.75rem;
+  }
+  
+  /* Card Styling */
+  .card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 1rem;
+  }
+  
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-header {
+    background: #f1f3f5;
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .card-body {
+    padding: 1rem;
+    color: #495057;
+  }
+  
+  /* Input and Button Styling */
+  input[type="text"], input[type="date"], select, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    transition: box-shadow 0.2s, border-color 0.2s;
+  }
+  
+  input[type="text"]:focus, input[type="date"]:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  }
+  
+  button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  table th, table td {
+    text-align: left;
+    padding: 0.75rem;
+    border: 1px solid #dee2e6;
+  }
+  
+  table th {
+    background: #f8f9fa;
+    font-weight: bold;
+  }
+  
+  table tr:nth-child(even) {
+    background: #f1f3f5;
+  }
+  
+  /* Footer Styling */
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background: #343a40;
+    color: #ffffff;
+  }
+  
+  .footer a {
+    color: #007bff;
+  }
+  
+  .footer a:hover {
+    color: #0056b3;
+  }
+  

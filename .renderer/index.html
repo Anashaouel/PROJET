@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Projets</title>
+</head>
+<body>
+    <h1>Gestion des Projets</h1>
+    <ul id="project-list"></ul>
+    <script src="index.js"></script>
+</body>
+<form id="project-form">
+    <input type="text" id="project-name" placeholder="Nom du projet" required />
+    <button type="submit">Ajouter</button>
+</form>
+
+
+<div id="app">
+    <div id="project-section">
+        <h2>Projets en cours</h2>
+        <div id="active-projects"></div>
+        <form id="add-project-form">
+            <input type="text" id="project-name" placeholder="Nom du projet" required />
+            <input type="date" id="start-date" required />
+            <button type="submit">Ajouter le projet</button>
+        </form>
+        <div id="stats">
+            <h3>Statistiques</h3>
+            <p>Total : <span id="total-projects">0</span></p>
+            <p>Avancement moyen : <span id="avg-progress">0%</span></p>
+        </div>
+        <button id="show-delays">Voir les projets en retard</button>
+        <ul id="delayed-projects"></ul>
+    </div>
+
+    <div id="archive-section">
+        <h2>Archives</h2>
+        
+        <!-- Barre de recherche pour les projets -->
+        <input 
+            type="text" 
+            id="archive-project-search" 
+            placeholder="Rechercher un projet..." 
+            oninput="searchArchivedProjects()"
+        />
+    
+        <!-- Zone affichant les projets -->
+        <div id="archived-projects"></div>
+    </div>
+    
+
+
+</html>
